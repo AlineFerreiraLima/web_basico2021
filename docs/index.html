@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Apostila online</title>
+        <link rel="stylesheet" href="./estilo.css">
+    </head>
+    <body>    
+        <main>
+            <h1>Protocolo HTTP e Servidores WEB (HTTP)</h1>
+            <nav>
+                <a href="#funcionamento">O que é e como funcionam os protocolos HTTP e HTTPS?</a>
+                <a href="#clienteServidor">O que faz o HTTP na estrutura cliente servidor?</a>
+                <a href="#sessoes">Como funcionam as sessões no HTTP?</a>
+                <a href="#cookies">O que é um cookie?</a>
+                <a href="#servidor">O que são servidores web e por que utilizar?</a>
+            </nav>
+        
+                <h3 id="funcionamento">O que é e como funcionam os protocolos HTTP e HTTPS?</h3>
+                <p>HTTP é um protocolo de transferência de hipertexto, sendo implementado nos software responsáveis por essa comunicação (navegadores e servidores web), a transferência HTTP não é segura, pois todas as informações transmitidas não são criptografadas, com isso você corre o risco de invasores tenham acesso a suas informações.</p>
+                <p>HTTPS também é um protocolo de transferência de hipertexto, porém sua utilização é segura pois possui o certificado SSL, no qual se trata de um fornecedor terceirizado para proteger uma conexão e verificar se o site é legítimo. </p>
+                <p>Funcionamento: Ambos funcionam por meio de solicitações, a solicitação é enviada para o servidor, e como resposta o servidor envia uma nova solicitação exibindo o resultado da sua pesquisa em forma de texto e imagens.</p>
+        
+                <H3 id="clienteServidor">O que faz o HTTP na estrutura cliente servidor? </H3>
+                <P>Realiza a troca de dados entre cliente-servidor, nesse contexto podemos exemplificar como: eu como cliente entro no meu navegador web e faço uma pesquisa, seja um endereço de um site ou a receita de bolo de chocolate, o HTTP então irá realizar por meio das solicitações o pedido por dados armazenados em um servidor, que por sua vez irá fazer a busca desses dados solicitados e por meio de uma nova solicitação enviará ao cliente a resposta de sua pesquisa, que no caso seria a receita de bolo de chocolate.</P>
+        
+                <h3 id="sessoes">Como funcionam as sessões no HTTP?</h3>
+                <p>As sessões são específicas de cada usuário, a mesma é capaz de armazenar informações do usuário conforme ele vai interagindo com a página, porém essas informações não são salvas de fato, apenas utilizadas no período de interação do usuário com a aplicação, após o usuário finalizar seu acesso as informações são descartadas.</p>
+
+                <h3 id="cookies">O que é um cookie?</h3>
+                <p>Um cookie é um arquivo de texto simples composto de acordo com as informações do endereço web visitado, ele pode armazenar informações básicas, como endereços IP e preferências de idiomas.</p>
+                <p>Essas informações são obtidas quando você acessa um site pela primeira vez, esse site então envia para o seu computador, celular e etc, um cookie com suas preferências e quando você voltar a acessar esse site o arquivo é lido e as suas informações são carregadas, liberando seu acesso mais rapidamente. </p>
+                
+                <h3 id="servidor">O que são servidores web e por que utilizar?</h3>
+                <p>Os servidores web (HTTP) são softwares que processam pedidos via HTTP, os servidores web prestam serviços de armazenamento, processamento e entrega de páginas web aos clientes no qual é utilizado o protocolo HTTP como comunicação entre servidor e cliente, para isso é necessário uma conexão entre o computador onde está instalado o servidor web e o computador do cliente, com isso os servidores web precisam estar disponíveis dia e noite. A comunicação realizada pelo HTTP segue um modelo de request e response (pedido e resposta), essa conexão não é persistente, a cada acesso ou atualização do conteúdo é criada uma nova conexão HTTP e com isso todo o ciclo se repete.</p>
+                <img src="./Imagens/servidor1.gif" alt="servidor">
+        
+        </main>
+    </body>
+
+</html>
